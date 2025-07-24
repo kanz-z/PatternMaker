@@ -54,7 +54,7 @@ def segitiga_kiri():
 def segitiga_kanan():
     while True:
         try:
-            x = int(input("Tinggi segitiga siku kiri: "))
+            x = int(input("Tinggi segitiga siku kanan: "))
             break
         except ValueError:
             print("Input salah. Masukkan angka saja.")
