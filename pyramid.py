@@ -68,7 +68,7 @@ def belah_ketupat():
     intro()
 
 def kelanjutan():
-    i = str(input("Mau buat lagi? (y/n): "))
+    i = str(input("Mau buat yang lain? (y/n): "))
     if i == "y":
         mulai()
     elif i == "n":
