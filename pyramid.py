@@ -64,8 +64,19 @@ def segitiga_kanan():
     kelanjutan()
 
 def belah_ketupat():
-    print("Coming soon!")
-    intro()
+    while True:
+        try:
+            x = int(input("Tinggi piramida: "))
+            break
+        except ValueError:
+            print("Input salah. Masukkan angka saja.")
+    for i in range(1, x+1):
+        spasi = x - i
+        print(" " * spasi + "*" * (2*i-1))
+    for i in range(x-1, 0, -1):
+        spasi = x - i
+        print(" " * spasi + "*" * (2*i-1))
+    kelanjutan()
 
 def kelanjutan():
     i = str(input("Mau buat yang lain? (y/n): "))
